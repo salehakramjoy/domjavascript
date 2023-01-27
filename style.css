@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    margin-top: 71px;
+}
+.discription{
+    margin-left: 317px;
+}
+.image img{
+    width: 100%;
+    margin-left: 200px;
+  
+}

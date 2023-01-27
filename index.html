@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image">
+            <img src="images/mac.png" alt="">
+        </div>
+          
+        <div class="discription">
+             <div class="details">
+                <h2 class="text-3xl mb-3" >Customize our Blue 24-inch iMac with Apple M1 chip</h2>
+                <p>
+                   Apple M1 chip with 7 core cpiu with 3 performacne coresr Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia necessitatibus tempora reprehenderit quam non aperiam iusto, omnis dicta esse ipsam totam debitis aliquid natus ullam!
+                </p>
+             </div>
+
+             <div class="memory mt-3">
+                <h4 class=" mt-3 font-bold">Memory</h4>
+                <button onclick="mem_8()" class="mt-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow p-3">
+                    8 GB unfilled Memory
+                  </button>
+                <button onclick="mem_16()"  class="mt-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow p-3">
+                    16 GB unfilled Memory
+                  </button>
+             </div>
+
+             <!-- storage section  -->
+
+             <div class="memory mt-3">
+                <h4 class=" mt-6 font-bold">Storage</h4>
+                
+                <button onclick="store_256()" class="mt-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow p-3">
+                <span>256</span>GB SSD storage
+                  </button>
+                
+                  <button onclick="store_512()"  class="mt-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow p-3">
+                <span>512</span>GB SSD storage
+                  </button>
+                
+                  <button onclick="store_1()"  class="mt-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow p-3">
+                <span>1</span>TB SSD storage
+                </button>
+             </div>
+
+             <!-- delivery opton section  -->
+
+             <div class="memory mt-3">
+                <h4 class=" mt-6 font-bold">Choose your delivery option</h4>
+                <button onclick="deli_free()" class="mt-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow p-3">
+                    Friday, Aug 25 Free Prime Delivery 
+                  </button>
+                <button onclick="deli_20()" class="mt-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow p-3">
+                    Friday, Aug 21 Delivery charge $20
+                  </button>
+             </div>
+             
+
+             <!-- price section  -->
+
+             <div class="price w-1/2 mt-6">
+                <div class="best-price flex justify-between mt-6 ">
+                    <div><p class="font-semibold">Best Price</p></div>
+                    <div class="font-semibold"><p>$ <span id="base_price" >1299</span></p></div>
+                </div>
+
+                     <!-- Extra memory cost section -->
+                <div class="best-price flex justify-between mt-6 ">
+                    <div><p class="font-semibold">Extra Memory Cost</p></div>
+                    <div class="font-semibold"><p>$ <span id="mem-money">0</span></p></div>
+                </div>
+                 
+                <!-- Extra storage section  -->
+
+                <div class="best-price flex justify-between mt-6 ">
+                    <div><p class="font-semibold">Extra Storage Cost</p></div>
+                    <div class="font-semibold"><p>$ <span id="store-money" >0</span></p></div>
+                </div>
+
+                
+                
+                <!-- delivery charge section  -->
+
+                 <!-- এটা হচ্ছে ডেলিভারি ইনফরমেশন  -->
+
+
+                <div class="best-price flex justify-between mt-6 ">
+                    <div><p class="font-semibold">Delivery Charge</p></div>
+                    <div class="font-semibold"><p>$<span id="deli-money">0</span></p></div>
+                </div>
+                <hr class=" mt-5 font-bold">
+                <div class="total_mon flex justify-between ">
+                  <div><p class="font-semibold">Total </p></div>
+                  <div class="font-semibold"><p>$<span id="total-money">0</span></p></div>
+                </div>
+                
+             </div>
+
+             <!-- promo section  -->
+
+             <div class="promo mt-6">
+                <div class="">
+                    <label for="exampleText0" class="form-label inline-block mb-2 text-gray-700 font-bold"
+                    >Promo Code</label>
+                    <div class="mb-3 xl:w-96 ">
+                     
+                      <input
+                        type="text"
+                        class="
+                          form-control
+                          block
+                          w-full
+                          px-2
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                        "
+                        id="exampleText0"
+                        placeholder="Type your promo code"
+                      />
+                      <button onclick="promo()" class="mt-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow bg-gray-500 text-white">
+                        Apply
+                      </button>
+                    </div>
+                  </div>
+             </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="main">
+      
+           
+    </div>
+  <script src="app.js"></script>  
+</body>
+</html>
